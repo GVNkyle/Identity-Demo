@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-6" style="align-items: center; justify-content: center;">
+      <div class="row" style="height: 450px;">
+        <div class="col-md-12 my-auto side-header">
+          <img src="/assets/img/add_user.png" class="mx-auto d-block">
+          <h1>User Registration</h1>
+          <p><em>Using <strong>Asp.Net Core Web API</strong> and <strong>Angular</strong> with <strong>Microsoft
+                Identity</strong></em></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <form [formGroup]="model" (ngSubmit)="model.valid && register()">
+        <div class="form-group required">
+          <label for="UserName">User Name</label>
+          <input class="form-control" formControlName="UserName">
+          <label class="text-danger"
+            *ngIf="model.controls.UserName.touched && model.controls.UserName.errors?.required">This field is
+            mandatory.</label>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input class="form-control" formControlName="Email">
+          <label class="text-danger" *ngIf="model.controls.Email.touched && model.controls.Email.errors?.email">Invalid
+            email address.</label>
+        </div>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input class="form-control" formControlName="FullName">
+        </div>
+        <div class="form-group required">
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName="Password">
+          <label class="text-danger"
+            *ngIf="model.controls.Password.touched && model.controls.Password.errors?.required">This field is
+            mandatory.</label>
+          <label class="text-danger"
+            *ngIf="model.controls.Password.touched && model.controls.Password.errors?.minlength">Minimum 4 characters
+            required.</label>
+        </div>
+        <div class="form-group required">
+          <label>Confirm Password</label>
+          <input type="password" class="form-control" formControlName="ConfirmPassword">
+          <label class="text-danger"
+            *ngIf="model.controls.ConfirmPassword.touched && model.controls.ConfirmPassword.errors?.required">This field
+            is
+            mandatory.</label>
+          <label class="text-danger"
+            *ngIf="model.controls.ConfirmPassword.touched && model.controls.ConfirmPassword.errors?.minlength">Minimum 4
+            characters
+            required.</label>
+          <label class="text-danger"
+            *ngIf="model.controls.ConfirmPassword.touched && model.controls.ConfirmPassword.errors?.confirmedValidator">Password
+            and ConfirmPassword must be match!</label>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-8 offset-md-2">
+            <button type="submit" class="btn btn-lg btn-block" [disabled]="!model.valid">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
