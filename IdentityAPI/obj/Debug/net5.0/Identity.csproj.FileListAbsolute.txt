@@ -101,7 +101,6 @@ E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Microsoft.IdentityMod
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
-E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -138,3 +137,4 @@ E:\KhoaIT\Some Demos\Identity\IdentityAPI\obj\Debug\net5.0\Identity.dll
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\obj\Debug\net5.0\ref\Identity.dll
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\obj\Debug\net5.0\Identity.pdb
 E:\KhoaIT\Some Demos\Identity\IdentityAPI\obj\Debug\net5.0\Identity.genruntimeconfig.cache
+E:\KhoaIT\Some Demos\Identity\IdentityAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

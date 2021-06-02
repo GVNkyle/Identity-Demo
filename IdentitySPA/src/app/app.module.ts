@@ -9,12 +9,16 @@ import { UserService } from './core/services/user.service';
 import { RegisterComponent } from './user/register/register.component';
 import { UserComponent } from './user/user.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { LoginComponent } from './user/login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

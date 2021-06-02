@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-white">Identity Demo</a>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="Logout()">Logout</button>
+</nav>
+<h1 class="m-5">Welcome!</h1>
+<div class="card m-5" style="width:18rem" *ngIf="userProfile">
+    <ul class="list-group">
+        <li class="list-group-item"><strong>Username : </strong>{{userProfile.userName}}</li>
+        <li class="list-group-item"><strong>FullName : </strong>{{userProfile.fullName}}</li>
+        <li class="list-group-item"><strong>Email : </strong>{{userProfile.email}}</li>
+    </ul>
+</div>

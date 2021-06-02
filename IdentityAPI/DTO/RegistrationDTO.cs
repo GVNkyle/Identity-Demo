@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Identity.Models
+namespace Identity.DTO
 {
-    public class ApplicationUserModel
+    public class RegistrationDTO
     {
         public string UserName { get; set; }
         public string Email { get; set; }
