@@ -40,6 +40,8 @@ export class RegisterComponent implements OnInit {
         this.snotify.success('User Register Successfully!', 'Success!');
       } else {
         this.snotify.error('Something went wrong here, double check again', 'Error!');
+        console.log(res);
+
       }
     })
   }

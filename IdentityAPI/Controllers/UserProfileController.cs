@@ -31,5 +31,29 @@ namespace IdentityAPI.Controllers
                 user.UserName
             };
         }
+
+        [HttpGet]
+        [Authorize(Roles = "Administrator")]
+        [Route("ForAdministrator")]
+        public string GetForAdministrator()
+        {
+            return "Web method for Administrator";
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Staff")]
+        [Route("ForStaff")]
+        public string GetStaff()
+        {
+            return "Web method for Staff";
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Administrator,Staff")]
+        [Route("ForAdministratorAndStaff")]
+        public string GetForAdminOrStaff()
+        {
+            return "Web method for Administrator and Staff";
+        }
     }
 }
